@@ -30,3 +30,103 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.timer-section {
+  padding: 36px 156px;
+}
+
+.timer-input{
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 32px;
+  margin-right: 8px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.timer-input:hover {
+  border: 1px solid #000;
+}
+
+.timer-input:focus {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+
+.timer-input:disabled {
+  color: #808080;
+  background-color: #fafafa;
+}
+
+.timer-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #cfcfcf;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #989898;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.timer-btn:hover {
+  background-color: #6c8cff;
+  color: #fff;
+}
+
+.timer-btn:focus-visible {
+  background-color: #4e75ff;
+  color: #fff;
+}
+
+.timer-btn:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer-div {
+  display: flex;
+  gap: 24px;
+  width: 346px;
+}
+
+.field {
+  width: calc((100% - 24px) / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-part {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label-part {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}

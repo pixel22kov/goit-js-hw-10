@@ -4,31 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
-      <section class="section">
-        <div class="container">
-          <input type="text" id="datetime-picker" />
-          <button type="button" data-start>Start</button>
+      <section class="timer-section">
+        <input class="timer-input" type="text" id="datetime-picker" />
+        <button class="timer-btn" type="button" data-start>Start</button>
 
-          <div class="timer">
-            <div class="field">
-              <span class="value" data-days>00</span>
-              <span class="label">Days</span>
-            </div>
-            <div class="field">
-              <span class="value" data-hours>00</span>
-              <span class="label">Hours</span>
-            </div>
-            <div class="field">
-              <span class="value" data-minutes>00</span>
-              <span class="label">Minutes</span>
-            </div>
-            <div class="field">
-              <span class="value" data-seconds>00</span>
-              <span class="label">Seconds</span>
-            </div>
+        <div class="timer-div">
+          <div class="field">
+            <span class="value-part" data-days>00</span>
+            <span class="label-part">Days</span>
+          </div>
+          <div class="field">
+            <span class="value-part" data-hours>00</span>
+            <span class="label-part">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value-part" data-minutes>00</span>
+            <span class="label-part">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value-part" data-seconds>00</span>
+            <span class="label-part">Seconds</span>
           </div>
         </div>
       </section>
